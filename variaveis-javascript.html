@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JavaScript</title>
+</head>
+
+<body>
+
+
+
+    <script src="variaveis.js"> </script><!-- dentro dessa tag é onde iremos inserir os códigos JavaScript  -->
+    <script>
+        var w = 1
+
+        w++ /* É igual dizer w = 1 */
+
+        document.write(`<p>a = ${w}</p> <br>`)
+
+        document.write(++w) /* está dizendo para a variável ser incrementada antes */
+        document.write(`<br> ${w++} <br>`) /* a variável contém 3 e está sendo adicionado 1 */
+        document.write(` ${w} <br>`) /* Agora está mostrando o valor 4, porque ele pegou o 3 e incrementou +1 */
+
+        let z = 5
+
+        document.write(`${--z} <br>`)
+        document.write(`${z++} <br>`)
+        document.write(`${z} <br>`)
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Conversor de variável</title>
+</head>
+
+<body>
+
+    <script>
+
+        let numero = parseInt(prompt('Digite um número, senhor usuário: '))
+        console.log(typeof numero) /* O typeof informa qual é o tipo de variável */
+
+        let numeroStr = '70.989'
+        let numero1 = parseInt(numeroStr)
+        let numero2 = parseFloat(numeroStr)
+
+        
+
+        console.log(`numeroStr = `, numeroStr) /* String */
+        console.log(`numero =` , numero1) /* inteiro */
+        console.log(`numero2 =` , numero2) /* real */
+
+
+        console.log(`numeroStr =  ${numeroStr}`) /* String */
+        console.log(`numero = ${numero1}`) /* inteiro */
+        console.log(`numero2 = ${numero2}`) /* real */
+
+        let numero3 = Number('15') /* Esse Number é um objeto, que transforma String em inteiro e decimal */
+        console.log(numero3)
+
+        let numero4 = Number('26.86') /* Esse Number é um objeto, que transforma String em inteiro e decimal */
+        console.log(numero4)
+
+        let booleano = Boolean('505050') /* String com valor é verdadeira, se estiver vazia, ele é falso */ /* true */
+        let booleano2 = Boolean('') /* False */
+        let booleano3 = Boolean(1)
+        let booleano4 = Boolean(50)
+
+        console.log(booleano)
+        console.log(booleano2)
+        console.log(booleano3, booleano4)
+
+        let numerico = 30
+        let numericoStr = String(numerico)
+        console.log('numerico = ', numerico)
+        console.log('numericoStr = ', numericoStr) /* Virou string */
+
+
+    </script>
+
+</body>
+
+</html>

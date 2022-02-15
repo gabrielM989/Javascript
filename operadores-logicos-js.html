@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos</title>
+</head>
+
+<body>
+    <script>
+
+        let idade = 22
+        let temPassagem = false
+
+        console.log(idade >= 18 && temPassagem === false) /* realizando comparações && */
+
+        /*
+        V V -> V
+        V F -> F
+        F V -> F
+        F F -> F
+        */
+
+        let trouxeIdentidade = true
+        let trouxeTitulo = false
+        
+        console.log(trouxeIdentidade == true || trouxeTitulo === true)
+
+        /* Tabela Verdade do NÃO - coloca o ! antes da variável, para inverter os valores
+        Não V -> F
+        Não F -> V
+        */
+
+        /* Tabela Verdade do XOR
+        VV -> F
+        FF -> F
+        FV -> V
+        VF -> V
+        */
+
+        let nasciEm = 'São Paulo'
+
+        console.log(nasciEm === 'São Paulo' ^ nasciEm ==='Porto Alegre' ^ nasciEm === 'Portugal')
+
+        /* 1 = Verdadeiro, 0 = Falso */
+
+
+    </script>
+
+</body>
+
+</html>
